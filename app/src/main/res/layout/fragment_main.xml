@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/main_imageView"
+        android:scaleType="fitXY"
+        android:src="@drawable/test"
+        /></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="160dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="-160dp"
+
+            android:text="我们做渗透测试，需要的是什么？需要漏洞，漏洞是什么？
+漏洞是可以利用来获取我们想要得到的东西的途径，技术或是非技术的，但漏洞从何而来？
+分析，分析什么？分析对方人员的思想或源代码。人的思想有固定的，也有漂浮不定的，难以捉摸……"
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10pt"/>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:background="@drawable/radius_rectangle"
+    android:alpha="0.85"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/alert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_marginBottom="55dp"
+        android:gravity="center_horizontal"
+        android:textSize="10pt"
+
+        />
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/save_note_btn"
+        android:layout_marginBottom="55dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="8pt"
+            android:text="名称："/>
+        <EditText
+            android:id="@+id/note_file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:padding="10px"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <View
+        android:layout_alignBottom="@+id/save_note_btn"
+        android:layout_marginBottom="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#FF909090" />
+    <Button
+        android:id="@+id/save_note_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/costum_button"
+        android:text="保存"/>
+    <Button
+        android:id="@+id/cancel_save"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/costum_button"
+        android:text="取消"/>
+</RelativeLayout>

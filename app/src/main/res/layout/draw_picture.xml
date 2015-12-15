@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/paint_item"
+        android:orientation="vertical"
+        >
+
+        <com.mylife.draw.DoodleView
+            android:id="@+id/draw_picture_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/toolbar"/>
+    <LinearLayout
+        android:id="@+id/paint_item"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        >
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/canvas_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:background="#0000"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:id="@+id/paint_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:background="#0000"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:id="@+id/paint_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:background="#0000"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:id="@+id/earse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:background="#0000"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:id="@+id/add_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:background="#0000"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
