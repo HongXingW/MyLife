@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity implements FragmentDrawer.Fr
     private FragmentDrawer fragmentDrawer;
     private PopMenu popMenu;
     private long exitTime = 0;
-    Fragment fragment = null;
+    public static Fragment fragment = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
