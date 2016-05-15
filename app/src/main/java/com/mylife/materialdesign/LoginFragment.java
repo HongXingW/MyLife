@@ -20,6 +20,7 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.mylife.tools.HttpUtils;
 import com.mylife.tools.SVProgressHUD;
+import com.mylife.tools.URLContacts;
 
 import org.apache.http.Header;
 
@@ -72,7 +73,7 @@ public class LoginFragment extends Fragment {
         params.put("username",username);
         params.put("password",password);
 
-        HttpUtils.post("http://10.60.102.180:520/mylife/login.php",params,new AsyncHttpResponseHandler(){
+        HttpUtils.post(URLContacts.LOGIN_URL,params,new AsyncHttpResponseHandler(){
 
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {

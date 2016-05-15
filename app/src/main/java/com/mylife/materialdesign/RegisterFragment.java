@@ -56,6 +56,7 @@ public class RegisterFragment extends Fragment {
             }
         });
 
+        cancelBtn = (Button)rootView.findViewById(R.id.clearbtn);
         cancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
